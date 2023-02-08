@@ -6,7 +6,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +21,8 @@ public class NewIncidentPage {
     }
 
     private WebElement serviceField () {
-        return getDriver ().findElement (By.cssSelector (".input-group > input#sys_display\\.incident\\.business_service"));
+        return getDriver ().findElement (
+            By.cssSelector (".input-group > input#sys_display\\.incident\\.business_service"));
     }
 
     private WebElement serviceFieldHelpBtn () {
@@ -50,8 +50,8 @@ public class NewIncidentPage {
     }
 
     private WebElement selectServicesLink () {
-        return getDriver ().findElement (
-            By.cssSelector ("#cmdb_ci_service > #cmdb_ci_service_table > tbody > tr:nth-child(2) > td:nth-child(3) > a"));
+        return getDriver ().findElement (By.cssSelector (
+            "#cmdb_ci_service > #cmdb_ci_service_table > tbody > tr:nth-child(2) > td:nth-child(3) > a"));
     }
 
     public void selectServices () {
@@ -66,11 +66,13 @@ public class NewIncidentPage {
                 break;
             }
         }
-        getDriver ().switchTo ().window (originalWindow);
+        getDriver ().switchTo ()
+            .window (originalWindow);
     }
 
     public String getPageTitle () {
-        return getDriver ().findElement (By.cssSelector ("h1 > div > div.navbar-title-display-value")).getText ();
+        return getDriver ().findElement (By.cssSelector ("h1 > div > div.navbar-title-display-value"))
+            .getText ();
     }
 
     public IncidentListPage createNewIncident (String callerName, String channelName, String shortDesc) {
@@ -80,7 +82,8 @@ public class NewIncidentPage {
         selectServices ();
         shortDescriptionField ().sendKeys (shortDesc);
         submitBtn ().click ();
-        getDriver ().navigate ().to("https://dev21190.service-now.com/incident_list.do");
+        getDriver ().navigate ()
+            .to ("https://dev21190.service-now.com/incident_list.do");
         return new IncidentListPage ();
     }
 

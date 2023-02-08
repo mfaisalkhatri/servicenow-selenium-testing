@@ -98,7 +98,7 @@ public class DriverManager {
     private static void setupChromeInLambdaTest () {
         final ChromeOptions browserOptions = new ChromeOptions ();
         browserOptions.setPlatformName ("Windows 10");
-        browserOptions.setBrowserVersion ("107.0");
+        browserOptions.setBrowserVersion ("108.0");
         browserOptions.setCapability ("LT:Options", ltOptions ());
         try {
             setDriver (
@@ -113,7 +113,7 @@ public class DriverManager {
     private static void setupFirefoxInLambdaTest () {
         final FirefoxOptions browserOptions = new FirefoxOptions ();
         browserOptions.setPlatformName ("Windows 10");
-        browserOptions.setBrowserVersion ("107.0");
+        browserOptions.setBrowserVersion ("108.0");
         browserOptions.setCapability ("LT:Options", ltOptions ());
         try {
             setDriver (
@@ -140,7 +140,7 @@ public class DriverManager {
         ltOptions.put ("resolution", "2560x1440");
         ltOptions.put ("selenium_version", "4.0.0");
         ltOptions.put ("build", "ServiceNow Build");
-        ltOptions.put ("name", "ServiceN ow Tests");
+        ltOptions.put ("name", "ServiceNow Tests");
         ltOptions.put ("w3c", true);
         ltOptions.put ("plugin", "java-testNG");
         return ltOptions;

@@ -30,7 +30,8 @@ public class LoginPage {
         userNameField ().sendKeys (userName);
         passwordField ().sendKeys (password);
         loginBtn ().click ();
-        getDriver().navigate ().to("https://dev21190.service-now.com/incident.do");
+        getDriver ().navigate ()
+            .to ("https://dev21190.service-now.com/incident.do");
         return new NewIncidentPage ();
     }
 }

@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Service Now Tests Suite with Selenium WebDriver">
-    <test name="Testing ServiceNow Demo website ">
-        <parameter name="browser" value="chrome"/>
+<suite name="Service Now Tests Suite with Selenium WebDriver" parallel="tests">
+    <test name="Testing ServiceNow Demo website on Chrome browser - LambdaTest">
+        <parameter name="browser" value="remote_chrome_lambdatest"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.ServiceNowTests">
+                <methods>
+                    <include name="testNewIncident"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Testing ServiceNow Demo website on Firefox Browser - LambdaTest ">
+        <parameter name="browser" value="remote_firefox_lambdatest"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.ServiceNowTests">
                 <methods>
