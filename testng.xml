@@ -6,7 +6,7 @@
         <classes>
             <class name="io.github.mfaisalkhatri.tests.ServiceNowTests">
                 <methods>
-                    <include name="testCreateNewIncident"/>
+                    <include name="testNewIncident"/>
                 </methods>
             </class>
         </classes>

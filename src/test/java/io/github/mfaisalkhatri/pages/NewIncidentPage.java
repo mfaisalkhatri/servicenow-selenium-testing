@@ -73,13 +73,15 @@ public class NewIncidentPage {
         return getDriver ().findElement (By.cssSelector ("h1 > div > div.navbar-title-display-value")).getText ();
     }
 
-    public void createNewIncident (String callerName, String channelName, String shortDesc) {
+    public IncidentListPage createNewIncident (String callerName, String channelName, String shortDesc) {
         callerNameField ().sendKeys (callerName);
         selectChannelByVisibleText (channelName);
         clickServiceFieldHelpBtn ();
         selectServices ();
         shortDescriptionField ().sendKeys (shortDesc);
         submitBtn ().click ();
+        getDriver ().navigate ().to("https://dev21190.service-now.com/incident_list.do");
+        return new IncidentListPage ();
     }
 
 }
