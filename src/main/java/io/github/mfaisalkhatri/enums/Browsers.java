@@ -9,22 +9,11 @@ import lombok.Getter;
 @Getter
 public enum Browsers {
 
-    /**
-     * Chrome Browser
-     */
-    CHROME,
-    /**
-     * Firefox browser
-     */
-    FIREFOX,
-    /**
-     * LambdaTest Firefox Browser
-     */
-    REMOTE_FIREFOX_LAMBDATEST,
+    REMOTE_FIREFOX,
     /**
      * LambdaTest Chrome browser.
      */
-    REMOTE_CHROME_LAMBDATEST
+    REMOTE_CHROME
 
 }
 
