@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Service Now Tests Suite with Selenium WebDriver" parallel="tests">
     <test name="Testing ServiceNow Demo website on Chrome browser - LambdaTest">
-        <parameter name="browser" value="remote_chrome_lambdatest"/>
+        <parameter name="browser" value="remote_chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.ServiceNowTests">
                 <methods>
@@ -12,7 +12,7 @@
         </classes>
     </test> <!-- Test -->
     <test name="Testing ServiceNow Demo website on Firefox Browser - LambdaTest ">
-        <parameter name="browser" value="remote_firefox_lambdatest"/>
+        <parameter name="browser" value="remote_firefox"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.ServiceNowTests">
                 <methods>
