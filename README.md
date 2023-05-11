@@ -21,10 +21,16 @@ By default, tests would be running on LambdaTest Platform on Chrome and Firefox 
       `-DLT_USERNAME=<LambdaTest username> -DLT_ACCESS_KEY=<LambdaTest_Access_Key> -Dwebsite_username=<ServiceNow app
       username> -Dwebsite_password=<ServiceNow app password>`
 
-🧬 Need Assistance?
+## :writing_hand: Blog Link
+
+- [How To Automate ServiceNow With Selenium](https://www.lambdatest.com/blog/automating-servicenow-with-selenium/)
+
+## 🧬 Need Assistance?
 
 - Discuss your queries by writing to me @ `mohammadfaisalkhatri@gmail.com`
   OR ping me on any of the social media sites using the below link:
     - [Linktree](https://linktr.ee/faisalkhatri)
 
-## :thought_balloon: Checkout the blogs related to Testing on [LambdaTest blogs](https://www.lambdatest.com/blog/author/mfaisalkhatri/), [medium blogs](https://medium.com/@iamfaisalkhatri) and [my website](https://mfaisalkhatri.github.io)  
+### :thought_balloon: Checkout the blogs related to Testing on [LambdaTest blogs](https://www.lambdatest.com/blog/author/mfaisalkhatri/), [medium blogs](https://medium.com/@iamfaisalkhatri) and [my website](https://mfaisalkhatri.github.io)  
+
+### :bookmark: Checkout videos related to Software Testing and Test automation tools on [Testing Talks with Faisal Khatri](https://www.youtube.com/@faisalkhatriqa)
